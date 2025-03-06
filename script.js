@@ -22,7 +22,7 @@ const winningCombination = [
 
 const handleClick = (e) => {
     const square = e.target;
-    if (square.innerHTML !== "") return; // Evita sobrescrever movimentos
+    if (square.innerHTML !== "") return;
     makeMove(square, currentPlayer);
     if (checkWinner(currentPlayer)) {
         resultText.innerHTML = `${currentPlayer} venceu!`;
